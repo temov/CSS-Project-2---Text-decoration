@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" lang="mk">
+<title>text decoration</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+    article{
+        padding: 30px;
+        margin-left:20px;
+        background: #EBDB36;
+        
+    }
+body {
+	width: 600px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+    background: #fff;
+}
+/*add styles here*/
+h1 {
+	font-size: 1.6em;
+}
+p {
+	font-size: 1em;
+    text-align: justify;
+    font-family: "Georgia", sans-serif;
+}
+    .design h1{
+        background: #1EE872;
+        padding: 10px 0px 10px 30px;
+        margin: 0px -70px 20px -30px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: "Georgia", sans-serif;
+        letter-spacing: 2px;
+    }
+    .design h1:after{
+        content: '';
+        display:block;
+        width: 40px;
+        height: 40px;
+        background: url(images/fold.gif) no-repeat 0 0;
+        position: absolute; right: 0px; bottom: -40px;
+    }
+    .design ul{
+        padding: 0;
+        margin: 0;
+    }
+    .design li{
+        display: block;
+        position: relative;
+        padding: 0px 0px 5px 35px;
+    }
+    .design li:before{
+                content: '';
+                display: block;
+                background: url(images/arrow.png) no-repeat 0 0;
+                height: 12px; width: 30px;
+                position: absolute; top: 10px; left: 0px;
+                background-size: 20px 10px;
+            }
+</style>
+</head>
+<body>
+<article class="design">
+<h1 >Декорација на текст</h1>
+<p>Користејќи го својството за декорација на текст, може да додадете специјални ефекти или други опции за форматирање на текст. Ова може да ви помогне  ако сакате да го потцртате текстот, да додадете линија преку негo или да направите  текстот да трепка. </p>
+<ul>
+  <li class="none">Не нанесувај стил.</li>
+  <li class="underline">Стави линија под текст.</li>
+  <li class="overline">Стави линија над текст.</li>
+  <li class="line">Стави линија преку текст.</li>
+  <li class="blink">Направи да трепка текстот.</li>
+</ul>
+</article>
+</body>
+</html>
